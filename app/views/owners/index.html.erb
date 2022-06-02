@@ -1,29 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div id="header">
+  <h1>
+    <%= image_tag 'logo.svg', alt:'profile' %>
+  </h1>
+  <nav>
+    <ul>
+      <li>About</li>
+      <li>Bicycle</li>
+    </ul>
+  </nav>
+</div>
 
-<h1>Owners</h1>
+<div id="main">
+  <div id="main-visual">
+    <%= image_tag 'mainvisual.jpg' %>
+  </div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>About</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<section id="about">
+  <h2>About</h2>
+  <div>
+    <%= image_tag 'about.jpg', alt:'about' %>
+    <h3>KAKERU MIYAICHI</h3>
+    <a>テキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキスト</a>
+  </div>
+</section>
 
-  <tbody>
-    <% @owners.each do |owner| %>
-      <tr>
-        <td><%= owner.name %></td>
-        <td><%= owner.about %></td>
-        <td><%= link_to 'Show', owner %></td>
-        <td><%= link_to 'Edit', edit_owner_path(owner) %></td>
-        <td><%= link_to 'Destroy', owner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Owner', new_owner_path %>
+<div id="footer"></div>

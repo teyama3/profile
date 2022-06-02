@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  margin-top: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    width: 120px;
+    img {
+      width: 100%;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+      li {
+        width: 50%; // 横並びの要素はそれぞれ親要素の50%ずつの幅
+        list-style: none; // 点を無くす
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+#main {
+  #main-visual {
+    img {
+      height: 550px;
+      width: 100vw;
+      object-fit: fill;
+      margin-left: calc(-50vw + 50%) // 画面幅いっぱいに広げて中央寄せ
+    }
+  }
+}
+
+#about {
+  h2 {
+    width: 120px;
+    font-size: 36px; // ブラウザごとにデフォルトCSSが当たっており、それの相殺
+    font-weight: normal; // 太字の調整
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid;
+  }
+}
