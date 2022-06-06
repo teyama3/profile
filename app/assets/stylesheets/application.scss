@@ -51,7 +51,8 @@ body {
       height: 550px;
       width: 100vw;
       object-fit: fill;
-      margin-left: calc(-50vw + 50%) // 画面幅いっぱいに広げて中央寄せ
+      margin-left: calc(-50vw + 50%); // 画面幅いっぱいに広げて中央寄せ
+      margin-bottom: 50px;
     }
   }
 }
@@ -59,11 +60,30 @@ body {
 #about {
   h2 {
     width: 120px;
+    height: 30px;
     font-size: 36px; // ブラウザごとにデフォルトCSSが当たっており、それの相殺
     font-weight: normal; // 太字の調整
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     border-bottom: solid;
+  }
+  #content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 30px;
+    }
+    .text {
+      flex-flow: column;
+    }
+    h3 {
+      text-align: left;
+    }
   }
 }
