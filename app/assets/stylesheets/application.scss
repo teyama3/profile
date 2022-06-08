@@ -73,6 +73,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
     img {
       width: 100px;
       height: 100px;
@@ -85,5 +86,43 @@ body {
     h3 {
       text-align: left;
     }
+  }
+}
+
+#bicycle {
+  h2 {
+    width: 120px;
+    height: 30px;
+    font-size: 36px; // ブラウザごとにデフォルトCSSが当たっており、それの相殺
+    font-weight: normal; // 太字の調整
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-bottom: solid;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      list-style: none;
+    }
+    img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      margin: 0 10px;
+    }
+    .content {
+      text-align: center;
+    }
+  }
+}
+
+#footer {
+  p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2px;
   }
 }
