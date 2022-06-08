@@ -1,61 +1,41 @@
-<div id="header">
-  <h1>
-    <%= image_tag 'logo.svg', alt:'profile' %>
-  </h1>
-  <nav>
-    <ul>
-      <li>About</li>
-      <li>Bicycle</li>
-    </ul>
-  </nav>
-</div>
+<header>
+  <h1>Profile</h1>
+  <ul>
+    <li><a href=#>About</a></li>
+    <li><a href=#>Bicycle</a></li>
+  </ul>
+</header>
 
-<div id="main">
-  <div id="main-visual">
-    <%= image_tag 'mainvisual.jpg' %>
-  </div>
-</div>
-
-<section id="about">
+<main>
+  <%= image_tag "mainvisual.jpg" %>
   <h2>About</h2>
-  <div id="content">
-    <%= image_tag 'about.jpg', alt:'about' %>
-    <div class="text">
-      <h3>KAKERU MIYAICHI</h3>
-      <p>テキストテキストテキストテキストテキストテキストテキスト<br>
-      テキストテキストテキストテキストテキストテキストテキスト<br>
-      テキストテキストテキストテキストテキストテキストテキスト</p>
-    </div>
-  </div>
-</section>
-
-<section id="bicycle">
+  <%= image_tag "about.jpg" %>
+  <h3>KAKERU MIYAICHI</h3>
+  <p>
+    テキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキスト
+    テキストテキストテキストテキストテキストテキストテキスト
+  </p>
   <h2>Bicycle</h2>
   <ul>
     <li>
-      <%= image_tag 'bicycle1.jpg', alt:'bicycle1' %>
-      <div class="content">
-        <h3>タイトルタイトル</h3>
-        <p>テキストテキストテキスト</p>
-      </div>
+      <%= image_tag "bicycle1.jpg" %>
+      <h3>タイトルタイトル</h3>
+      <p>テキストテキストテキスト</p>
     </li>
     <li>
-      <%= image_tag 'bicycle2.jpg', alt:'bicycle2' %>
-      <div class="content">
-        <h3>タイトルタイトル</h3>
-        <p>テキストテキストテキスト</p>
-      </div>
+      <%= image_tag "bicycle2.jpg" %>
+      <h3>タイトルタイトル</h3>
+      <p>テキストテキストテキスト</p>
     </li>
     <li>
-      <%= image_tag 'bicycle3.jpg', alt:'bicycle3' %>
-      <div class="content">
-        <h3>タイトルタイトル</h3>
-        <p>テキストテキストテキスト</p>
-      </div>
+      <%= image_tag "bicycle3.jpg" %>
+      <h3>タイトルタイトル</h3>
+      <p>テキストテキストテキスト</p>
     </li>
   </ul>
-</section>
+</main>
 
-<div id="footer">
-  <p>&copy;2020 Profile</p>
-</div>
+<footer>
+  <p>2020 Profile</p>
+</footer>
